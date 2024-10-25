@@ -1,0 +1,142 @@
+/* Global Settings */
+:root {
+  /* Kolory */
+  --blue: #345ff6;
+  --gunmetal: #253347;
+  --darkelectricblue: #5e6e85;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(90deg, #ffffff 0%, rgb(215, 231, 254) 100%);
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 12rem;
+  width: 60%;
+  border-radius: 0px 0px 32px 0px;
+  position: relative;
+}
+
+header img {
+  margin-bottom: 6rem;
+  width: 5rem;
+}
+
+header h1 {
+  font-size: 64px;
+  line-height: 1.1;
+  color: var(--gunmetal);
+  width: 45%;
+}
+
+header p {
+  width: 45%;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--darkelectricblue);
+}
+
+.calculator {
+  width: 25%;
+  position: absolute;
+  height: 400px;
+  top: 30%;
+  left: 56%;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.calculator h2 {
+  font-size: 24px;
+  color: var(--gunmetal);
+}
+
+.input-group {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+
+.input-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input-item label {
+  color: --darkelectricblue;
+  margin-bottom: 5px;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid #5e6e85;
+  border-radius: 10px;
+  padding: 18px;
+  width: 85%;
+}
+
+input[type="number"] {
+  border: none;
+  outline: none;
+  font-size: 24px;
+  color: #253347;
+  text-align: left;
+  width: 80%;
+}
+
+.unit {
+  color: #345ff6;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.input-wrapper:focus-within {
+  border: 1px solid #345ff6;
+}
+
+.input-item label {
+  color: var(--gunmetal);
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.result {
+  margin-top: 1rem;
+  background-color: var(--blue);
+  padding: 1rem 2rem;
+  color: #ffffff;
+  border-radius: 12px 100px 100px 12px;
+}
+
+.result-title {
+  font-size: 24px;
+}
+
+.result-description {
+  font-size: 14px;
+}
