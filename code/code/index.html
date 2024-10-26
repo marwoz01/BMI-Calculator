@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>BMI Calculator</title>
+  </head>
+  <body>
+    <header>
+      <img src="/assets/images/logo.svg" />
+      <h1>
+        Body Mass <br />
+        Index Calculator
+      </h1>
+      <p>
+        Better understand your weight in relation to your height using our body
+        mass index (BM) calculator. While BMI is not the sole determinant of a
+        healthy weight, it offers a valuable starting point to evaluate your
+        overall health and well-being.
+      </p>
+
+      <div class="calculator">
+        <h2>Enter your details below</h2>
+        <form>
+          <label>
+            <input type="radio" name="unit" checked />
+            <span class="custom-radio"></span> Metric
+            <input type="radio" name="unit" />
+            <span class="custom-radio"></span> Imperial
+          </label>
+
+          <div class="input-group">
+            <div class="input-item">
+              <label for="height">Height</label>
+              <div class="input-wrapper">
+                <input type="number" id="height" placeholder="0" />
+                <span class="unit">cm</span>
+              </div>
+            </div>
+
+            <div class="input-item">
+              <label for="weight">Weight</label>
+              <div class="input-wrapper">
+                <input type="number" id="weight" placeholder="0" />
+                <span class="unit">kg</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="result">
+            <p class="result-title">Welcome!</p>
+            <p class="result-description">
+              Enter your height and weight and you’ll see your BMI result here
+            </p>
+          </div>
+        </form>
+      </div>
+    </header>
+  </body>
+</html>

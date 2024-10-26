@@ -36,7 +36,6 @@ header h1 {
   line-height: 1.1;
   color: var(--gunmetal);
   width: 60%;
-  padding-top: 6rem;
 }
 
 header p {
@@ -112,6 +111,20 @@ input[type="number"] {
   border: 1px solid #345ff6;
 }
 
+.input-item label {
+  color: var(--gunmetal);
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 .result {
   margin-top: 2rem;
   background-color: var(--blue);
@@ -141,7 +154,6 @@ input[type="number"] {
 
   header h1 {
     width: 95%;
-    padding-top: 0;
   }
 
   header p {
@@ -150,11 +162,17 @@ input[type="number"] {
 
   .calculator {
     bottom: 2rem;
-    top: 80%;
+    top: 70%;
     left: 50%;
     transform: translateX(-50%);
     width: 70%;
     text-align: left;
+  }
+}
+
+@media (max-width: 1024px) {
+  .calculator {
+    top: 85%;
   }
 }
 
@@ -180,94 +198,5 @@ input[type="number"] {
 
   .result {
     border-radius: 12px;
-  }
-}
-
-.bmi-explanation {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 6rem;
-}
-
-.bmi-img {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.bmi-description {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-.bmi-description h1 {
-  font-size: 48px;
-  color: var(--gunmetal);
-  width: 60%;
-  padding-top: 8rem;
-}
-
-.bmi-description p {
-  font-size: 16px;
-  color: var(--darkelectricblue);
-  width: 50%;
-}
-
-.bmi-line {
-  position: absolute;
-  top: 100%;
-  left: 75%;
-}
-
-@media (max-width: 1280px) {
-  .bmi-explanation {
-    margin-top: 24rem;
-  }
-
-  .bmi-description h1 {
-    padding-top: 2rem;
-    width: 100%;
-  }
-
-  .bmi-description p {
-    width: 85%;
-  }
-
-  .bmi-line {
-    display: none;
-  }
-}
-
-@media (max-width: 950px) {
-  .bmi-explanation {
-    margin-top: 12rem;
-    gap: 0;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .bmi-img {
-    width: 100%;
-    margin-top: 18rem;
-  }
-
-  .bmi-description {
-    margin-left: 6rem;
-    width: 100%;
-  }
-
-  .bmi-description h1 {
-    padding-top: 2rem;
-    width: 100%;
-  }
-
-  .bmi-description p {
-    width: 85%;
   }
 }
