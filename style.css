@@ -238,10 +238,15 @@ input[type="number"] {
   .bmi-description p {
     width: 85%;
   }
+
+  .bmi-line {
+    display: none;
+  }
 }
 
 @media (max-width: 950px) {
   .bmi-explanation {
+    margin-top: 12rem;
     gap: 0;
     display: flex;
     flex-direction: column;
